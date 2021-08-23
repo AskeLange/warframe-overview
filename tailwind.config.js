@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   darkMode: false, 
   purge: [ 
@@ -11,29 +12,46 @@ module.exports = {
 
     // Fonts      
     fontFamily: {
-      'primary': ['"Josefin Sans"', 'ui-sans-serif', 'system-ui'],
-      'secondary': ['"Butler"', 'ui-serif', 'Georgia'],
+      'sans': ['"Josefin Sans"', 'ui-sans-serif', 'system-ui'],
+      'serif': ['"Butler"', 'ui-serif', 'Georgia'],
     },
 
     // Colors
-    color: {
-      white: { DEFAULT: '#ffffff' },
-      black: { DEFAULT: '#000000' },
-      gray: { light: '#f8f8f8', DEFAULT: '#999999' },
+    colors: {
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
 
       primary: {
         light: '#A2DBE8',
         DEFAULT: '#73C5D8',
         dark: '#379BB2',
       },
-
-      secondary: {
-        light: '',
-        DEFAULT: '',
-        dark: '',
-      }
     },
- 
+
+    // Fill
+    fill: {
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+
+      primary: {
+        light: '#A2DBE8',
+        DEFAULT: '#73C5D8',
+        dark: '#379BB2',
+      },
+    },
+
+    // Min width
+    minWidth: {
+      '0': '0',
+      '1/5': '20%',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      'full': '100%',
+    }
+
   },
   variants: {
     extend: {

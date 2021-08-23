@@ -37,6 +37,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg-sprite',
+    'nuxt-animejs'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
